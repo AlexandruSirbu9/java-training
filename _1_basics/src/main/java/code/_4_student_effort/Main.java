@@ -6,30 +6,32 @@ public class Main {
 
 
   }
-  public class Pair2{
-    public Integer countPairs (Integer[] numbers){
-      Integer pairs = 0;
-      Integer[] indexesIncludedInPairs = new Integer[numbers.length];
-      int nrOfIndexesIncludedInPairs = 0;
+  public class Challenge1 {
 
-      for (int i = 0; i < numbers.length - 1; i++){
-        for (int j = i+1; j< numbers.length;j++){
-          boolean indexesIncludedInOtherPairs = false;
-          for (int k = 0; k< nrOfIndexesIncludedInPairs; k++){
-            if (indexesIncludedInPairs[k] == i || indexesIncludedInPairs[k] == j){
-              indexesIncludedInOtherPairs = true;
-            }
-          }
-          if (!indexesIncludedInOtherPairs && (numbers[i] + numbers[j] == 0)){
-            indexesIncludedInPairs[nrOfIndexesIncludedInPairs ++] =i;
-            indexesIncludedInPairs[nrOfIndexesIncludedInPairs ++] = j;
-            pairs++;
-            break;
-          }
+    public  void run() {
+      for (int i = 1; i <= 100; i++ ){
+
+        if ( i % 7 == 0){
+          System.out.println("Rizz");
+        }
+        else if ( i % 11 == 0){
+          System.out.println("Jazz");
+        }
+        else if ( i % 3 == 0 && i % 5 == 0) {
+          System.out.println("FizzBUzz");
+        }
+        else if ( i % 3 == 0) {
+          System.out.println("Fizz");
+        }
+        else if ( i % 5 == 0) {
+          System.out.println("Buzz");
+        }
+        else {
+          System.out.println(i);
         }
       }
-      return pairs;
-
     }
   }
+
+
 }
