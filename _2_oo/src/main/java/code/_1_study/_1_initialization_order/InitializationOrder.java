@@ -2,7 +2,9 @@ package code._1_study._1_initialization_order;
 
 public class InitializationOrder {
   public static void main(String[] args) {
+    //Parent parent = new Parent();
     Child c = new Child();
+
   }
 }
 

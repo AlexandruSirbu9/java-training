@@ -16,6 +16,8 @@ public interface DefaultAndPrivateMethodsInInterfaces {
   }
 }
 
+
+
 class DefaultMethods implements DefaultAndPrivateMethodsInInterfaces {
 
   public static void main(String[] args) {
