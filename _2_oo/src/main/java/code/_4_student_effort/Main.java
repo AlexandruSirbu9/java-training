@@ -1,15 +1,7 @@
 package code._4_student_effort;
 
 public class Main {
-  public static void main(String[] args) {
-    Fighter f1 = new Fighter("Ion" , 11 , 100);
-    Fighter f2 = new Fighter("Robert" , 12 , 100);
+    public static void main(String[] args) {
 
-    Box box = new Box(f1 , f2);
-    String w = box.fight();
-    System.out.println(w);
-
-  }
-
-
+    }
 }
