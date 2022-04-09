@@ -1,4 +1,4 @@
-package code._4_student_effort.Movie_Database;
+package code._4_student_effort.DataBase;
 
 import code._2_challenge._2_movie_database.Actor;
 import code._2_challenge._2_movie_database.Film;

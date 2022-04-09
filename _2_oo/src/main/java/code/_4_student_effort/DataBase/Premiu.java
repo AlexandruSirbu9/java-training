@@ -1,4 +1,4 @@
-package code._4_student_effort.Movie_Database;
+package code._4_student_effort.DataBase;
 
 public class Premiu {
     String name;
