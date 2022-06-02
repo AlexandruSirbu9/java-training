@@ -16,16 +16,13 @@ public class ChessBoard {
         pawn.setPieceColor(pieceColor);
 
         if (EmptyPosition(xCoordinate , yCoordinate) == true){
-            if (pawn.getPieceColor().equals(PieceColor.BLACK) && xCoordinate < 7 && yCoordinate < 7
-            || pawn.getPieceColor().equals(PieceColor.WHITE) && xCoordinate < 7 && yCoordinate < 0){
                 pawn.setXCoordinate(xCoordinate);
                 pawn.setYCoordinate(yCoordinate);
                 this.pieces[xCoordinate][yCoordinate] = pawn;
 
-            }else {
-                pawn.setXCoordinate(-1);
-                pawn.setYCoordinate(-1);
-            }
+        }  else {
+            pawn.setXCoordinate(-1);
+            pawn.setYCoordinate(-1);
         }
 
     }
@@ -41,7 +38,7 @@ public class ChessBoard {
 
 
     public boolean IsLegalBoardPosition(int xCoordinate, int yCoordinate) {
-        if (xCoordinate < pieces[0].length && xCoordinate >= 0
+        if (xCoordinate < pieces.length  && xCoordinate >= 0
             && yCoordinate < pieces.length && yCoordinate >= 0){
             return true;
         }
