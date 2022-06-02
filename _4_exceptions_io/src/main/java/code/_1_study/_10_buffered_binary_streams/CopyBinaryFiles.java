@@ -21,7 +21,7 @@ public class CopyBinaryFiles {
     copy(reader, writer);
     Instant stop = Instant.now();
     Duration duration = Duration.between(start, stop);
-    System.out.println(msg + ": " + duration);
+    System.out.println(msg + ": " + duration.toMillis());
   }
 
   private static void copy(InputStream reader, OutputStream writer) throws IOException {
